@@ -6,10 +6,7 @@ const Detail = () => {
   const { sign } = useContext(HoroscopeContext);
   return (
     <div className="details">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg"
-        alt=""
-      />
+      <img src={sign.backgroundImg} alt="" />
       <h2>{sign.name}</h2>
       <h4>Element: {sign.element}</h4>
       <h4>Traits: {sign.traits}</h4>
